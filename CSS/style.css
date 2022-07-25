@@ -7,7 +7,7 @@
 .destak {
     background-color: rgb(59, 59, 59);
     width: 100px;
-    padding: 3px 5px;
+    padding: 5px;
     color: #fff;
     font-style: italic;
     text-align: center;
@@ -17,21 +17,53 @@
     border-left: 2px solid rgb(186, 51, 190);
 }
 
+.git-logo {
+    width: 50px;
+    display: flexbox;
+}
+
 h1, h3 {
-    margin: 20px;
+    margin-left: 20px;
+    display: inline;
 }
 
 p {
     display: inline;
 }
 
+#nav-bar {
+    margin: 20px;
+    padding: 5px;
+    background-color: #333;
+    width: 560px;
+    border-radius: 8px;
+}
+
+#nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item {
+    background-color: rgb(85, 85, 85);
+    padding: 10px 8px;
+    display: inline-flex;
+    border-radius: 5px;
+    border-left: 3px solid rgb(142, 221, 15);
+}
+
+.nav-item:hover {
+    background-color: rgb(26, 26, 26);
+}
+
 #command-box {
     padding: 5px;
     margin: 20px;
     background-color: rgb(211, 211, 211);
-    width: 350px;
+    width: 560px;
     border-radius: 5px;
     border-left: 2px solid #333;
+    justify-content: center;
 }
 
 .command-title {
