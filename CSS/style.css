@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.destak {
+    background-color: rgb(59, 59, 59);
+    width: 100px;
+    padding: 3px 5px;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    display: inline;
+    border-left: 2px solid rgb(186, 51, 190);
+}
+
+h1, h3 {
+    margin: 20px;
+}
+
+p {
+    display: inline;
+}
+
+#command-box {
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(211, 211, 211);
+    width: 350px;
+    border-radius: 5px;
+    border-left: 2px solid #333;
+}
+
+.command-title {
+    margin: 5px;
+    font-size: larger;
+}
+
+.command-des {
+    padding: 10px;
+    margin: 8px 5px;
+    background-color: mintcream;
+    border-radius: 3px;
+    border-left: 2px solid green;
+}
