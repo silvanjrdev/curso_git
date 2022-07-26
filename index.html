@@ -8,14 +8,19 @@
     <title>Curso de Git</title>
 </head>
 <body>
-    <h1>Curso de Git</h1> <img src="https://git-scm.com/images/logos/logomark-orange.png" class="git-logo">
+    <div id="menu-top">
+        <h1>Curso de Git</h1> <img src="https://git-scm.com/images/logos/logomark-orange.png" class="git-logo">
 
-    <div id="nav-bar">
-        <div class="nav-item">            
-            <a href="../HTML/comandos-basicos.html">Comandos básicos</a>
-        </div>
-        <div class="nav-item">
-            <a href="#">Comandos avançados</a>
+        <div id="nav-bar">
+            <div class="nav-item">            
+                <a href="../HTML/comandos-basicos.html">Comandos Básicos</a>
+            </div>
+            <div class="nav-item">            
+                <a href="../HTML/comandos-repositorio.html">Criando Repositório</a>
+            </div>
+            <div class="nav-item">
+                <a href="../HTML/comandos-avancados.html">Comandos avançados</a>
+            </div>
         </div>
     </div>
 
@@ -47,18 +52,29 @@
     <div id="command-box">
         <div class="command-title">Atualizações visuais dos arquivos, VS Code</div>
         <div class="command-des">
-            Quando temos um arquivo novo ou não temos nenhuma alteração de algum arquivo,
-            aparece o simbolo <div class="destak">"U" - untracked</div> ao lado do arquivo,
-            mostrando que esse arquivo não esta sendo <b><i>Monitorado</i></b>.
+            <p>
+                Quando temos um arquivo novo ou não temos nenhuma alteração de algum arquivo,
+                aparece o simbolo <div class="destak">"U" - untracked</div> ao lado do arquivo,
+                mostrando que esse arquivo não esta sendo <b><i>Monitorado</i></b>.
+            </p>
         </div>
         <div class="command-des">
-            Quando adicionamos um arquivo com o comando <div class="destak">.add</div>,
-            ao lado desse arquivo vai aparecer a letra <div class="destak">"A" - added</div>,
-            mostrando que agora esse arquivo está sendo monitorado pelo git.
+            <p>
+                Quando adicionamos um arquivo com o comando <div class="destak">.add</div>,
+                ao lado desse arquivo vai aparecer a letra <div class="destak">"A" - added</div>,
+                mostrando que agora esse arquivo está sendo monitorado pelo git.
+            </p>
         </div>
         <div class="command-des">
-            Quando fazemos uma alteração no arquivo, vai aparecer a letra <div class="destak">"M" - modified</div>,
-            ao lado do arquivo, demonstrando que há alterações a serem <b><i>Comitadas</i></b>.
+            <p>
+                Quando fazemos uma alteração no arquivo, vai aparecer a letra <div class="destak">"M" - modified</div>,
+                ao lado do arquivo, demonstrando que há alterações a serem <b><i>Comitadas</i></b>.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Você pode usar o comando <div class="destak">"cls"</div>para limpar o terminal.
+            </p>
         </div>
     </div>
     <div id="command-box">
