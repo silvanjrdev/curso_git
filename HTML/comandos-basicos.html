@@ -51,13 +51,19 @@
             <a href="#enviando-repositorio"><i class="number">6</i>Enviando um Repositório</a>
         </div>
         <div class="item-topics">
-            <a href="#clonando-repositorio"><i class="number">7</i>Clonando Repositório</a>
+            <a href="#recebendo-alteracao"><i class="number">7</i>Recebendo Alterações</a>
         </div>
         <div class="item-topics">
-            <a href="#git-log"><i class="number">8</i>Git Log</a>
+            <a href="#clonando-repositorio"><i class="number">8</i>Clonando Repositório</a>
         </div>
         <div class="item-topics">
-            <a href="#revertendo-alteracao"><i class="number">9</i>Revertendo Alterações</a>
+            <a href="#git-log"><i class="number">9</i>Git Log</a>
+        </div>
+        <div class="item-topics">
+            <a href="#revertendo-alteracao"><i class="number">10</i>Revertendo Alterações</a>
+        </div>
+        <div class="item-topics">
+            <a href="#ignorando-arquivo"><i class="number">11</i>Ignorando Arquivo</a>
         </div>
     </div>
 
@@ -131,10 +137,6 @@
         </div>
     </div>
 
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
-    </div>
-
     <div id="command-box">
         <div class="command-title" id="fazendo-commit">Fazendo um <b><i>Commit</i></b></div>
         <div class="command-des">
@@ -153,10 +155,6 @@
                 O comando <div class="destak">"-m"</div> serve para adicionar uma "mensagem" junto ao <b><i>Commit</i></b>.
             </p>
         </div>
-    </div>
-
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
     </div>
 
     <div id="command-box">
@@ -184,6 +182,25 @@
     </div>
 
     <div id="command-box">
+        <div class="command-title" id="recebendo-alteracao">Recebendo Alterações <b><i>Git Pull</i></b></div>
+        <div class="command-des">
+            <p>
+                Podemos receber as alteração feitas remotamente em nosso repositório.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Para isso vamos utilizar o comando <div class="destak">git pull</div>
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Assim, todas as alteração feitas em nosso repositório será baixada em nosso repositório local.
+            </p>
+        </div>
+    </div>
+
+    <div id="command-box">
         <div class="command-title" id="clonando-repositorio">Clonando Repositório</div>
         <div class="command-des">
             <p>
@@ -195,10 +212,6 @@
                 <br><div class="destak">git clone https://github.com/url-do-repositorio .</div>
             </p>
         </div>
-    </div>
-
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
     </div>
 
     <div id="command-box">
@@ -221,10 +234,6 @@
         </div>
     </div>
 
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
-    </div>
-
     <div id="command-box">
         <div class="command-title" id="revertendo-alteracao">Revertendo Alterações</div>
         <div class="command-des">
@@ -235,6 +244,30 @@
         <div class="command-des">
             <p>
                 Podemos usar o comando <div class="destak">git checkout nome-do-arquivo.html</div>
+            </p>
+        </div>
+    </div>
+
+    <div id="btn-top">
+        <a href="#menu-top">Voltar ao topo</a>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="ignorando-arquivo">Ignorando Arquivo</div>
+        <div class="command-des">
+            <p>
+                Para poder dizer ao Git que queremos <b><i>ignorar</i></b> um arquivo,
+                precisamos seguir alguns passos.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                <ul>
+                    <li>Primeiro criamos um arquivo chamado <div class="destak">.gitignore</div></li>
+                    <li>Nesse arquivo vamos colocar os caminhos das pastas e dos arquivos que queremos ignorar.</li>
+                    <li><div class="destak">.gitignore</div> agora tudo que estiver dentro desse arquivo não será enviado.</li>
+                    <li>Mas o arquivo <div class="destak">.gitignore</div> vai ser enviado para o Repositório.</li>
+                </ul>
             </p>
         </div>
     </div>
