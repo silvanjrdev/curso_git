@@ -56,6 +56,7 @@ p {
 
 .nav-item {
     background-color: rgb(85, 85, 85);
+    margin: 2px;
     padding: 10px 8px;
     display: inline-flex;
     border-radius: 5px;
@@ -97,4 +98,25 @@ ul li {
     border-radius: 3px;
     list-style: none;
     border-right: 2px solid #2c2c2c;
+}
+
+#btn-top {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 10px;
+    width: 100px;
+    background-color: #333;
+    text-align: center;
+    border-radius: 5px;
+    border-bottom: 2px solid #8d8d8d;
+}
+
+#btn-top a{
+    color: #d6d6d6;
+    text-decoration: none;
+}
+
+#btn-top a:hover {
+    color: #858585;
 }
