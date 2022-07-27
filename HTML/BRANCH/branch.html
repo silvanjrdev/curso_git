@@ -26,6 +26,148 @@
         </div>
     </div>
 
+    <div id="nav-topics">
+        <div class="item-topics">
+            <a href="#branchs"><i class="number">1</i>O que são Branchs</a>
+        </div>
+        <div class="item-topics">
+            <a href="#criando-branch"><i class="number">2</i>Criando Branchs</a>
+        </div>
+        <div class="item-topics">
+            <a href="#unir-branch"><i class="number">3</i>Unir Branchs</a>
+        </div>
+        <div class="item-topics">
+            <a href="#git-stash"><i class="number">4</i>Git Stash</a>
+        </div>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="branchs">O que são Branch's</div>
+        <div class="command-des">
+            <p>
+                Branch é uma maneira de "separar" as versões do nosso projeto.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Quando iniciamos um repositório no Git, ele sempre será iniciando na
+                <div class="destak">branch/main</div>
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                É recomendável não utilizar a <div class="destak">branch/main</div>
+                como repositório de modificações constantes. Sempre crie outras para
+                testar outros códigos e features. Deixando ela sempre como um
+                <br><div class="destak">backup de segurança</div>.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Depois de pronto e testado todas as novas funcionalidades, temos a possibilidade
+                de <div class="destak">mesclar</div> as branchs.
+            </p>
+        </div>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="criando-branch">Criando uma nova Branch</div>
+        <div class="command-des">
+            <p>
+                Podemos criar novas branchs quisermos, basta usar o comandos.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                O git deixa um * ao lado da branch que está ativa no momento. <div class="destak">* main</div>
+            </p>
+        </div>
+        <div class="command-des">
+            <ul>
+                <li><div class="destak">git branch nome_da_branch</div> Esse comando, criamos umas nova.</li>
+                <li><div class="destak">git branch</div> Usamos para ver todas as branchs ativas.</li>
+                <li><div class="destak">git checkout nova_branch</div> Usamos para trocar entre as branchs.</li>
+                <li><div class="destak">git checkout -b nova_branch</div> Com esse comando, criamos uma nova branch e já mudamos pra ela.</li>
+            </ul>
+        </div>
+        <div class="command-des">
+            <p>
+                Podemos deletar uma branch, mas é altamente recomendável que mantenhamos um histórico
+                de versões dos nossos projetos.
+            </p>
+            <ul>
+                <li><div class="destak">git branch -d nome_da_branch</div> Serve para deletar uma branch criada.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="unir-branch">Unindo Branchs</div>
+        <div class="command-des">
+            <p>
+                Depois de ter feito as alterações na branch paralela, agora podemos
+                unir as branchs. Para isso precisamos estar na branch que vai receber
+                as alterações.
+            </p>
+        </div>
+        <div class="command-des">
+            <ul>
+                <li>
+                    <div class="destak">git merge nome_da_branch</div> usamos para unir as branchs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="btn-top">
+        <a href="#menu-top">Voltar ao topo <i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="git-stash">Git Stash</div>
+        <div class="command-des">
+            <p>
+                Podemos resetar uma branch para um estado inicial usando o <b><i>Stash</i></b>.
+                <b><i>Stash</i></b> é como um ponto de recuperação. Podemos criar vários para
+                poder voltar neles quando necessário.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                Devemos fazer as alterações primeiro, para poder gerar um <b><i>Stash</i></b>. Assim
+                teremos um ponto onde voltar.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>Vamos usar o comando <div class="destak">git stash</div>  na branch que queremos resetar.</p>
+        </div>
+        <div class="command-des">
+            <p>
+                Podemos reverter um <b><i>Stash</i></b> acessando a lista de <b><i>Stash's</i></b>.
+                Podemos acessar pelo <div class="destak">ID {0}</div> que vai estar entre <b><i>{ }</i></b>.
+            </p>
+        </div>
+        <div class="command-des">
+            <ul>
+                <li><div class="destak">git stash list</div> vai listar todos os stashs criados.</li>
+                <li><div class="destak">git stash list</div> vai listar da primeira pra última,
+                lembrando que o indice 0 é a mais recente.</li>
+                <li><div class="destak">git stash apply 0</div> é o comando para acessar o stash que queremos
+                voltar, lembrando que o ponto de recuperação é o numero do <b><i>Stash</i></b>.</li>
+            </ul>
+        </div>
+        <div class="command-des">
+            <p>
+                Podemos verificar também, as diferenças entre as <b><i>Stash</i></b>.
+            </p>
+        </div>
+        <div class="command-des">
+            <ul>
+                <li><div class="destak">git stash show -p 0</div> vai mostrar o que há na <b><i>Stash</i></b>.</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
