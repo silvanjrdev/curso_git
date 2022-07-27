@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d44cbb7c56.js" crossorigin="anonymous"></script>
     <title>Curso de Git</title>
 </head>
 <body>
@@ -13,273 +14,47 @@
 
         <div id="nav-bar">
             <div class="nav-item">            
-                <a href="../HTML/comandos-basicos.html">Comandos Básicos</a>
-            </div>
-            <div class="nav-item">            
-                <a href="../HTML/criando-repositorio.html">Criando Repositório</a>
+                <a href="../../HTML/BASICO/page-inicial.html"><i class="fa-solid fa-code"></i> Comandos Básicos</a>
             </div>
             <div class="nav-item">
-                <a href="../HTML/comandos-avancados.html">Comandos Avançados</a>
+                <a href="../../HTML/BRANCH/branch.html"><i class="fa-solid fa-code-branch"></i> Branch</a>
             </div>
+            |
             <div class="nav-item">
-                <a href="https://github.com/silvanjrdev/curso_git" target="_blank">Curso Git</a>
+                <a href="https://github.com/silvanjrdev/curso_git" target="_blank"><i class="fa-brands fa-github"></i> Repo Git</a>
             </div>
         </div>
-    </div>
+    </div><br>
 
-    <h3>Navegação por tópicos</h3>
-    
-    <div id="nav-topics">
-        <div class="item-topics">
-            <a href="#comandos-basicos"><i class="number">1</i>Comandos Básicos</a>
-        </div>
-        <div class="item-topics">
-            <a href="#atualizacoes-vs"><i class="number">2</i>Atualizações do VS Code</a>
-        </div>
-        <div class="item-topics">
-            <a href="#fazendo-commit"><i class="number">3</i>Fazendo um Commit</a>
-        </div>
-        <div class="item-topics">
-            <a href="#enviando-repositorio"><i class="number">4</i>Enviando um Repositório</a>
-        </div>
-        <div class="item-topics">
-            <a href="#recebendo-alteracao"><i class="number">5</i>Recebendo Alterações</a>
-        </div>
-        <div class="item-topics">
-            <a href="#clonando-repositorio"><i class="number">6</i>Clonando um Repositório</a>
-        </div>
-        <div class="item-topics">
-            <a href="#acessando-log"><i class="number">7</i>Acessando um Log</a>
-        </div>
-        <div class="item-topics">
-            <a href="#revertendo-alte"><i class="number">8</i>Revertendo Alterações</a>
-        </div>
-        <div class="item-topics">
-            <a href="#resetando-repo"><i class="number">9</i>Resetando Repositório</a>
-        </div>
-        <div class="item-topics">
-            <a href="#ignorando-arquivo"><i class="number">10</i>Ignorando Arquivos</a>
-        </div>
-    </div>
+    <h1>Estudando Git e GitHub - Curso Completo</h1><br>
+    <p>Aplicando todos os conhecimentos nesse projeto prático.</p>
 
-    <br /><h3>Comandos de configuração básica de um projeto Git</h3>
-
-    <div id="command-box">
-        <div class="command-title" id="comandos-basicos">Comandos básicos de configuração</div>
-        <div class="command-des">
-            <p>
-                Inicializa um diretório <span class="destak">.git</span>
-                na pasta raiz do projeto.
-            </p>
+    <div id="nav-container">
+        <div id="nav-button">
+            <a href="../HTML/BASICO/page-inicial.html">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="nav-title">Comandos Básicos</div>
+                <div class="nav-desc">
+                    Primeiros comandos de git.
+                </div>
+            </a>
         </div>
-        <div class="command-des">
-            <p>
-                Configurar o usuário do projeto com <span class="destak">git config user.name "nomedeusuario"</span>
-                e <div class="destak">git config user.email "email@usuario.com"</div> para Configurar o email.
-            </p>
+        <div id="nav-button">
+            <a href="../HTML/BRANCH/branch.html">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <div class="nav-title">Branch</div>
+                <div class="nav-desc">
+                    Entendendo Branchs.
+                </div>
+            </a>
         </div>
-        <div class="command-des">
-            <p>
-                Para saber se a configuração do projeto deu certo, basta usar os comandos de verificação
-                <div class="destak">git config user.name</div>
-                <div class="destak">git config user.email</div>, se aparecer o nome e o email cadastrado,
-                então está tudo certo.
-            </p>
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="atualizacoes-vs">Atualizações visuais dos arquivos, VS Code</div>
-        <div class="command-des">
-            <p>
-                Quando temos um arquivo novo ou não temos nenhuma alteração de algum arquivo,
-                aparece o simbolo <div class="destak">"U" - untracked</div> ao lado do arquivo,
-                mostrando que esse arquivo não esta sendo <b><i>Monitorado</i></b>.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Quando adicionamos um arquivo com o comando <div class="destak">.add</div>,
-                ao lado desse arquivo vai aparecer a letra <div class="destak">"A" - added</div>,
-                mostrando que agora esse arquivo está sendo monitorado pelo git.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Quando fazemos uma alteração no arquivo, vai aparecer a letra <div class="destak">"M" - modified</div>,
-                ao lado do arquivo, demonstrando que há alterações a serem <b><i>Comitadas</i></b>.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Você pode usar o comando <div class="destak">"cls"</div>para limpar o terminal.
-            </p>
-        </div>
-    </div>
-
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="fazendo-commit">Fazendo um <b><i>Commit</i></b></div>
-        <div class="command-des">
-            <p>
-                Fazendo um primeiro <b><i>Commit</i></b>.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Você pode usar o comando <div class="destak">git commit . -m "Descrição da alteração"</div>
-                para adicionar as alterações ao repositório do git.
-            </p>
-        </div>
-        <div class="command-des">
-            O comando <div class="destak">"-m"</div> serve para adicionar uma "mensagem" junto ao <b><i>Commit</i></b>.
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="enviando-repositorio">Enviando um repositório</div>
-        <div class="command-des">
-            <p>
-                Vamos utilizar a sequencia de comandos a seguir:
-            </p>
-            <ul>
-                <li><div class="destak">git init</div> para inicializar o git na pasta do projeto.</li>
-                <li><div class="destak">git commit -m "Primeiro commit"</div> para inicializar o git na pasta do projeto.</li>
-                <li><div class="destak">git branch -m main</div> para adicionar ao <b><i>Branch</i></b> principal.</li>
-                <li><div class="destak">git remote add origin https://github.com/seu-repositiry</div> para se conectar ao repositório.</li>
-                <li><div class="destak">git push -u origin main</div> para enviar os arquivos do projeto.</li>
-            </ul>
-        </div>
-        <div class="command-des">
-            <p>
-                Podemos utilizar o comando <div class="destak">git push</div> para enviar um <b><i>Commit</i></b> de maneira simples
-                e direta, depois que tudo já estiver configurado.
-            </p>
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="recebendo-alteracao">Recebendo Alterações <b><i>Git Pull</i></b></div>
-        <div class="command-des">
-            <p>
-                Podemos receber as alteração feitas remotamente em nosso repositório.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Para isso vamos utilizar o comando <div class="destak">git pull</div>
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Assim, todas as alteração feitas em nosso repositório será baixada em nosso repositório local.
-            </p>
-        </div>
-    </div>
-
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="clonando-repositorio">Clonando Repositório</div>
-        <div class="command-des">
-            <p>
-                Para clonar um repositório vamos usar o comando.
-                <br><div class="destak">git clone https://github.com/urldorepositorio</div>
-                dessa maneira o git vai clonar o repositório, criando uma pasta com o nome do
-                repositório acessado. Para clonar somente os arquivos direto em uma pasta,
-                basta adicionar um ".", no fim do comando de clonar.
-                <br><div class="destak">git clone https://github.com/urldorepositorio .</div>
-            </p>
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="acessando-log">Acessando Log - <b><i>Git Log</i></b></div>
-        <div class="command-des">
-            <p>
-                Serve para entender de forma cronológica tudo que já foi feito em nosso projeto.
-                O Git vai nos mostrar todas a <b><i>Commits</i></b> feitas no projeto.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Para acessar, basta usar o comando <div class="destak">git log</div>
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Vamos ver todas as <b><i>Commits</i></b> da mais recente, até a primeira.
-            </p>
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="revertendo-alte">Revertendo Alterações</div>
-        <div class="command-des">
-            <p>
-                Temos a possibilidade de reverter uma alteração feita em nosso projeto.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                Podemos usar o comando <div class="destak">git checkout nome-do-arquivo.html</div>
-            </p>
-        </div>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="resetando-repo">Resetando um Repositório</div>
-        <div class="command-des">
-            <p>
-                Podemos resetar o nosso repositório local para uma versão que não foi enviada
-                para o GitHub.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-               Para isso vamos utilizar o comando <div class="destak">git reset --hard origin/main</div> 
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                <div class="destak">--hard</div> serve para <b><i>forçar</i></b> esse comando de reset.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                <div class="destak">origin/main</div> indica a <b><i>branch</i></b> que queremos resetar.
-            </p>
-        </div>
-    </div>
-    
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
-    </div>
-
-    <div id="command-box">
-        <div class="command-title" id="ignorando-arquivo">Ignorando Arquivo</div>
-        <div class="command-des">
-            <p>
-                Para poder dizer ao Git que queremos <b><i>ignorar</i></b> um arquivo,
-                precisamos seguir alguns passos.
-            </p>
-        </div>
-        <div class="command-des">
-            <p>
-                <ul>
-                    <li>Primeiro criamos um arquivo chamado <div class="destak">.gitignore</div></li>
-                    <li>Nesse arquivo vamos colocar os caminhos das pastas e dos arquivos que queremos ignorar.</li>
-                    <li><div class="destak">.gitignore</div> agora tudo que estiver dentro desse arquivo não será enviado.</li>
-                    <li>Mas o arquivo <div class="destak">.gitignore</div> vai ser enviado para o Repositório.</li>
-                </ul>
-            </p>
-        </div>
+        
     </div>
 
 </body>
+
 </html>
