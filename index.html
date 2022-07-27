@@ -31,7 +31,7 @@
     
     <div id="nav-topics">
         <div class="item-topics">
-            <a href="#comandos-basicos"><i class="number">1</i> Básicos</a>
+            <a href="#comandos-basicos"><i class="number">1</i>Comandos Básicos</a>
         </div>
         <div class="item-topics">
             <a href="#atualizacoes-vs"><i class="number">2</i>Atualizações do VS Code</a>
@@ -52,7 +52,13 @@
             <a href="#acessando-log"><i class="number">7</i>Acessando um Log</a>
         </div>
         <div class="item-topics">
-            <a href="#ignorando-arquivo"><i class="number">8</i>Ignorando Arquivos</a>
+            <a href="#revertendo-alte"><i class="number">8</i>Revertendo Alterações</a>
+        </div>
+        <div class="item-topics">
+            <a href="#resetando-repo"><i class="number">9</i>Resetando Repositório</a>
+        </div>
+        <div class="item-topics">
+            <a href="#ignorando-arquivo"><i class="number">10</i>Ignorando Arquivos</a>
         </div>
     </div>
 
@@ -213,12 +219,46 @@
     </div>
 
     <div id="command-box">
-        <div class="command-title">Revertendo Alterações</div>
+        <div class="command-title" id="revertendo-alte">Revertendo Alterações</div>
         <div class="command-des">
             <p>
                 Temos a possibilidade de reverter uma alteração feita em nosso projeto.
             </p>
         </div>
+        <div class="command-des">
+            <p>
+                Podemos usar o comando <div class="destak">git checkout nome-do-arquivo.html</div>
+            </p>
+        </div>
+    </div>
+
+    <div id="command-box">
+        <div class="command-title" id="resetando-repo">Resetando um Repositório</div>
+        <div class="command-des">
+            <p>
+                Podemos resetar o nosso repositório local para uma versão que não foi enviada
+                para o GitHub.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+               Para isso vamos utilizar o comando <div class="destak">git reset --hard origin/main</div> 
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                <div class="destak">--hard</div> serve para <b><i>forçar</i></b> esse comando de reset.
+            </p>
+        </div>
+        <div class="command-des">
+            <p>
+                <div class="destak">origin/main</div> indica a <b><i>branch</i></b> que queremos resetar.
+            </p>
+        </div>
+    </div>
+    
+    <div id="btn-top">
+        <a href="#menu-top">Voltar ao topo</a>
     </div>
 
     <div id="command-box">
@@ -239,10 +279,6 @@
                 </ul>
             </p>
         </div>
-    </div>
-
-    <div id="btn-top">
-        <a href="#menu-top">Voltar ao topo</a>
     </div>
 
 </body>
